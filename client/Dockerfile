@@ -1,24 +1,27 @@
-# Use official Node.js image
+# Start from official Node.js 18 image
 FROM node:18
 
-# Set working directory
+# Create app directory inside container
 WORKDIR /app
 
-# Copy package.json and install dependencies
+# Copy package.json first to install dependencies
 COPY package.json ./
+
+# Install dependencies
 RUN npm install
 
-# Copy rest of the code
+# Copy rest of the app files
 COPY . .
 
-# Build the React app
+# Build the React production files
 RUN npm run build
 
-# Install serve globally
+# Install serve package to serve the build files
 RUN npm install -g serve
 
-# Expose port 3000
+# Expose port for serve
 EXPOSE 3000
 
-# Serve the build folder
+# Start the app using serve
 CMD ["serve", "-s", "build"]
+
