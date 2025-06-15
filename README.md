@@ -17,14 +17,14 @@ This is a full-stack MERN application containerized using Docker and Docker Comp
 
 ### Steps
 1. Clone the repository:
---git clone https://github.com/Rahi88/mern-docker-assignment.git
---cd mern-docker-assignment
+   i. git clone https://github.com/Rahi88/mern-docker-assignment.git
+   ii.cd mern-docker-assignment
 
 2.Build and Run the Containers:
  --docker-compose up --build  (cmd to build containers all at once)
 It will start:
- --Backend on: http://localhost:5000/api/users
- --Frontend on: http://localhost:3000/
+   i. Backend on: http://localhost:5000/api/users
+   ii.Frontend on: http://localhost:3000/
 3.Stopping the App
 --docker-compose down
 
