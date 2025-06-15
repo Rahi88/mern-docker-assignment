@@ -25,6 +25,7 @@ This is a full-stack MERN application containerized using Docker and Docker Comp
 - It will start:
    - Backend on: http://localhost:5000/api/users
    - Frontend on: http://localhost:3000/
+     
 3.Stopping the App
 - docker-compose down
 
