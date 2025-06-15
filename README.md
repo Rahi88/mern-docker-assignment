@@ -17,8 +17,8 @@ This is a full-stack MERN application containerized using Docker and Docker Comp
 
 ### Steps
 1. Clone the repository:
-   i. git clone https://github.com/Rahi88/mern-docker-assignment.git
-   ii.cd mern-docker-assignment
+- git clone https://github.com/Rahi88/mern-docker-assignment.git
+- cd mern-docker-assignment
 
 2.Build and Run the Containers:
  --docker-compose up --build  (cmd to build containers all at once)
