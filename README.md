@@ -1,28 +1,34 @@
-<<<<<<< HEAD
-# MERN Docker Assignment
+
+# MERN App Docker Assignment
 
 ## Project Description
-
 This is a full-stack MERN application containerized using Docker and Docker Compose. It includes:
-
 - React frontend
 - Node.js Express backend
 - MongoDB database
+  
 
-## How to build and run
+## Instructions to Build and Run the App Locally
 
 ### Prerequisites
-
-- Docker installed
+- Docker installed  
 - Docker Compose installed
+- Easy(Just install docker desktop , open & run the engine  it will have both docker and docker compose)
 
 ### Steps
-
 1. Clone the repository:
-
-```bash
-git clone <your-repo-url>
+git clone https://github.com/Rahi88/mern-docker-assignment.git
 cd mern-docker-assignment
-=======
-# mern-docker-assignment
->>>>>>> 6ccad026439682cc64d6cac8b954b9e57e96dc7c
+
+2.Build and Run the Containers:
+docker-compose up --build  (cmd to build containers all at once)
+It will start:
+ --Backend on: http://localhost:5000/api/users
+ --Frontend on: http://localhost:3000/
+3.Stopping the App
+docker-compose down
+
+### Notes:
+Fully Dockerized MERN stack application.
+Simple build & run using Docker Compose.
+For any issues, check Docker Desktop logs or container logs.
